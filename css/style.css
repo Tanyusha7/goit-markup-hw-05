@@ -18,12 +18,15 @@
   --border-color: #404bbf;
 }
 
-/* body */
+/* base */
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-bcg-color);
   font-size: 16px;
 }
+
+/* components class */
 
 .list {
   padding: 0;
@@ -35,9 +38,11 @@ body {
 .list-item {
   width: calc((100% - 72px) / 4);
 }
+
 .list-item:not(:last-child) {
   margin-right: 24px;
 }
+
 h1,
 h2,
 h3,
@@ -45,9 +50,11 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .link {
   text-decoration: none;
 }
+
 .section-title {
   margin-bottom: 72px;
   text-align: center;
@@ -59,6 +66,7 @@ p {
   text-transform: capitalize;
   color: var(--main-title-color);
 }
+
 .section-subtitle {
   margin-bottom: 8px;
 
@@ -68,11 +76,13 @@ p {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+
 .section-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -97,10 +107,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /* header */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -134,10 +147,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-link-text-color);
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
+
 .header-logo {
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
@@ -172,12 +187,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
 }
 
 /* hero */
+
 .hero {
   padding: 188px 0;
   text-align: center;
@@ -194,6 +211,7 @@ img {
   max-width: 1440px;
   margin: auto;
 }
+
 .hero-title {
   width: 500px;
   margin: 0 auto 64px;
@@ -219,16 +237,20 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--hero-btn-bcg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 /* Portfolio */
+
 .btn {
   display: inline-block;
 }
+
 .list-btn .btn + .btn {
   margin-left: 24px;
 }
@@ -268,6 +290,7 @@ img {
 .portfolio {
   padding: 96px 0 120px 0;
 }
+
 .image-list {
   display: flex;
   flex-wrap: wrap;
@@ -280,6 +303,7 @@ img {
   padding: 0;
   border: 0.5px solid #f4f4fd;
 }
+
 .img-link {
   display: block;
   text-decoration: none;
@@ -289,6 +313,7 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .img {
   padding: 32px 16px;
   border-right: 1px solid #e7e9fc;
@@ -300,6 +325,7 @@ img {
 .feature {
   padding: 120px 0;
 }
+
 .feature-list {
   display: flex;
 }
@@ -308,6 +334,7 @@ img {
   width: 264px;
   text-align: left;
 }
+
 .icon {
   display: flex;
   margin-bottom: 8px;
@@ -323,10 +350,12 @@ img {
 .about {
   padding-bottom: 120px;
 }
+
 .list-about {
   display: flex;
   gap: 24px;
 }
+
 .list-about-item {
   min-width: 360px;
   border: 1px solid #e7e9fc;
@@ -337,25 +366,31 @@ img {
   padding: 120px 0;
   background: var(--third-bcg-color);
 }
+
 .about-team {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
+
 .card-content {
   padding: 32px 0;
 }
+
 .team-text {
   margin-bottom: 8px;
 }
+
 .social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
+
 .social-list-item {
   width: 40px;
 }
+
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -389,14 +424,17 @@ img {
 .customers {
   padding: 130px 0 120px 0;
 }
+
 .logo-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
+
 .logo-list-item {
   width: 168px;
 }
+
 .logo-list-link {
   display: flex;
   justify-content: center;
@@ -407,6 +445,7 @@ img {
   border-radius: 4px;
   fill: #8e8f99;
 }
+
 .logo-list-link:hover,
 .logo-list-link:focus {
   border-color: #404bbf;
@@ -418,6 +457,7 @@ img {
   padding: 100px 0;
   background: var(--second-bcg-color);
 }
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -436,9 +476,11 @@ img {
   text-transform: uppercase;
   color: var(--third-link-text-color);
 }
+
 .footer-logo span {
   color: var(--second-link-text-color);
 }
+
 .footer-text {
   width: 264px;
   text-align: left;
@@ -446,24 +488,29 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+
 /* footer-social */
 .footer-link {
   margin-left: 120px;
   max-width: 208px;
 }
+
 .footer-subtitle {
   margin-bottom: 16px;
   color: var(--second-title-color);
 }
+
 .footer-social-list {
   display: flex;
   justify-content: center;
   align-items: baseline;
   gap: 16px;
 }
+
 .footer-social-item {
   width: 40px;
 }
+
 .footer-social-link {
   display: flex;
   width: 100%;
