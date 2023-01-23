@@ -111,6 +111,7 @@ img {
 /* header */
 
 .header {
+  position: relative;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -151,6 +152,16 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.underline::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--border-color);
+  border-radius: 2px;
 }
 
 .header-logo {
@@ -209,6 +220,7 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  height: 600px;
   margin: auto;
 }
 
@@ -244,6 +256,37 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1440px;
+  height: 677px;
+  background: rgba(46, 47, 66, 0.4);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 576px;
+  display: block;
+  margin-bottom: 13px;
+  padding-top: 24px;
+  padding-right: 24px;
+  background-color: #ffffff;
+}
+
+/* practic */
 
 /* Portfolio */
 
