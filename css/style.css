@@ -16,6 +16,8 @@
   --second-bcg-color: #2e2f42;
   --third-bcg-color: #f4f4fd;
   --border-color: #404bbf;
+
+  --tm-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* base */
@@ -148,7 +150,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-link-text-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--tm-function);
 }
 
 .header-link:hover,
@@ -202,7 +204,7 @@ img {
 }
 
 .contact-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--tm-function);
 }
 
 .contact-link:hover,
@@ -254,8 +256,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--tm-function),
+    box-shadow 250ms var(--tm-function);
 }
 
 .hero-btn:hover,
@@ -327,9 +329,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--tm-function),
+    box-shadow 250ms var(--tm-function), color 250ms var(--tm-function);
 }
 
 .btn-items:hover,
@@ -361,7 +362,7 @@ img {
   display: block;
   text-decoration: none;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--tm-function);
 }
 .img-link:hover,
 .img-link:focus {
@@ -456,7 +457,7 @@ img {
   background-color: #4d5ae5;
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--tm-function);
 }
 
 .social-list-link:hover,
@@ -502,8 +503,8 @@ img {
   border-radius: 4px;
   fill: #8e8f99;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--tm-function),
+    fill 250ms var(--tm-function);
 
   /* transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
@@ -583,7 +584,7 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--tm-function);
 }
 
 .footer-social-link:is(:hover, :focus) {
