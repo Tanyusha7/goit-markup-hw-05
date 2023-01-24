@@ -147,6 +147,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-link-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -199,6 +201,10 @@ img {
   color: var(--main-text-color);
 }
 
+.contact-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
@@ -245,16 +251,17 @@ img {
   letter-spacing: 0.04em;
   color: var(--second-btn-text-color);
   background: var(--main-btn-bcg-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--hero-btn-bcg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .backdrop {
@@ -319,6 +326,10 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-items:hover,
@@ -326,7 +337,6 @@ img {
   background: var(--main-btn-bcg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   color: var(--second-btn-text-color);
 }
 
@@ -350,6 +360,8 @@ img {
 .img-link {
   display: block;
   text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .img-link:hover,
 .img-link:focus {
@@ -443,6 +455,8 @@ img {
   fill: #f4f4fd;
   background-color: #4d5ae5;
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -487,6 +501,11 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   fill: #8e8f99;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .logo-list-link:hover,
@@ -563,6 +582,8 @@ img {
   fill: #f4f4fd;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:is(:hover, :focus) {
