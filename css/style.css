@@ -11,7 +11,7 @@
   --main-btn-bcg-color: #4d5ae5;
   --second-btn-bcg-color: #f4f4fd;
   --hero-btn-bcg-color: #404bbf;
-  --accent-color: #4d5ae5;
+  --accent-color: #404bbf;
   --main-bcg-color: #ffffff;
   --second-bcg-color: #2e2f42;
   --third-bcg-color: #f4f4fd;
@@ -148,7 +148,6 @@ img {
 }
 
 .header-link {
-  position: relative;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -162,7 +161,12 @@ img {
   color: var(--accent-color);
 }
 
-.underline::after {
+.current {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -171,7 +175,7 @@ img {
   width: 100%;
   height: 4px;
 
-  background-color: var(--main-link-text-color);
+  background-color: var(--accent-color);
   border-radius: 2px;
 }
 
@@ -270,7 +274,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: var(--hero-btn-bcg-color);
+  background: var(--accent-color);
 }
 
 /* Portfolio */
@@ -311,7 +315,7 @@ img {
 
 .btn-items:hover,
 .btn-items:focus {
-  background: var(--main-btn-bcg-color);
+  background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--second-btn-text-color);
@@ -358,8 +362,8 @@ img {
   width: 100%;
   height: 100%;
   display: block;
-  padding: 40px 32px 164px;
-  transform: translate(0, 100%);
+  padding: 40px 32px;
+  transform: translateY(100%);
   transition: transform 250ms var(--tm-function);
 
   color: var(--third-link-text-color);
@@ -369,7 +373,7 @@ img {
 
 .img-link:hover .overlay-text,
 .img-link:focus .overlay-text {
-  transform: translate(0, 0);
+  transform: translateY(0);
 }
 
 .img {
@@ -464,7 +468,7 @@ img {
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: #404bbf;
+  background-color: var(--accent-color);
 }
 /* .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -511,7 +515,7 @@ img {
 
 .logo-list-link:hover,
 .logo-list-link:focus {
-  border-color: #404bbf;
+  border-color: var(--accent-color);
   fill: var(--border-color);
 }
 
@@ -653,6 +657,6 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: var(--second-link-text-color);
+  background-color: var(--accent-color);
   fill: var(--second-btn-text-color);
 }
